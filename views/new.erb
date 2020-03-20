@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width= device-width, initial scale= 1.0">
+<meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Pirate Form!</h1>
+<h2>Enter your pirate details below</h2>
+<form action = "/pirates" method = "post">
+<label for="name">Pirate name:</label>
+<input type="text" id ="name" name="pirate[name]"><br/>
+<label for="weight" >Pirate weight:</label>
+<input type="text" id ="weight" name="pirate[weight]"><br/>
+<label for="height">Pirate height:</label>
+<input type="text" id="height" name="pirate[height]"><br/>
+
+<h2>Ships</h2>
+<label for="ship_name_1">Ship name:</label>
+<input type="text" id="ship_name_1" name="pirate[ships][][name]"><br/>
+<label for="ship_type_1">Ship type:</label>
+<input type="text" id="ship_type_1" name="pirate[ships][][type]"><br/>
+<label for="ship_booty_1">Ship booty:</label>
+<input type="text" id="ship_booty_1" name="pirate[ships][][booty]"><br/>
+<label for="ship_name_2">Ship name:</label>
+<input type="text" id="ship_name_2" name="pirate[ships][][name]"><br/>
+<label for="ship_type_2">Ship type:</label>
+<input type="text" id ="ship_type_2" name="pirate[ships][][type]"><br/>
+<label for="ship_booty_2">Ship booty:</label>
+<input type="text" id="ship_booty_2" name="pirate[ships][][booty]"><br/>
+<button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
